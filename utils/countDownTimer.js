@@ -27,6 +27,7 @@ const getRemainingHours = (nowDayjs, timestampDayjs) => {
 export default function getRemainingTime(timestamp) {
   const timestampDayjs = dayjs(timestamp);
   const nowDayjs = dayjs();
+  console.log('timestamp',timestamp,'timestampDayjs',timestampDayjs,'nowDayjs',nowDayjs)
   if (timestampDayjs.isBefore(nowDayjs)) {
     return {
       seconds: "00",

@@ -21,7 +21,7 @@ const OurSpeakers = () => {
         <SectionTitle title={"Our Speakers"} /> 
       </div>
 
-      <div className="visible absolute sm:bottom-0 sm:right-0 sm:w-[45px] md:top-0 md:right-0 md:w-[55px] md:h-[55px] lg:top-1/4 lg:right-[50px] lg:top-[50px] lg:w-[100px] 2xl:w-[150px] 2xl:h-[120px] z-25 ">
+      {/* <div className="visible absolute sm:bottom-0 sm:right-0 sm:w-[45px] md:top-0 md:right-0 md:w-[55px] md:h-[55px] lg:top-1/4 lg:right-[50px] lg:top-[50px] lg:w-[100px] 2xl:w-[150px] 2xl:h-[120px] z-25 ">
         <Image src={Maqam} alt="maqam" layout="fill" />
       </div>
 
@@ -43,7 +43,7 @@ const OurSpeakers = () => {
 
       <div className="hidden lg:block absolute bottom-[4rem] left-0 lg:bottom-10 lg:right-1/4 lg:w-[80px] 2xl:w-[150px]">
         <Image src={atom} alt="atombotton" />
-      </div>
+      </div> */}
 
       <div className="flex items-center md:space-x-8 sm:mt-[40px] md:mt-[100px] lg:space-x-8">
         <div
@@ -70,7 +70,7 @@ const OurSpeakers = () => {
             },
           }}
         >
-          {speakers.map((spk, idx) => {
+          {/* {speakers.map((spk, idx) => {
             return (
               <SwiperSlide key={idx}>
                 {({ isActive, isNext, isPrev }) => (
@@ -100,7 +100,7 @@ const OurSpeakers = () => {
                 )}
               </SwiperSlide>
             );
-          })}
+          })} */}
         </Swiper>
 
         <div

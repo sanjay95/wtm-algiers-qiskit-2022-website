@@ -31,7 +31,7 @@ const OurPartners = () => {
   return (
     <section id="our-partners" className="section-container pt-12 lg:pt-24">
       <SectionTitle title={"Our Partners"} />
-      <div className="flex flex-row">
+      {/* <div className="flex flex-row">
         <div className=" w-1/12 ml-6">
           <div className=" hidden lg:flex">
             <div className="mt-5">
@@ -77,7 +77,7 @@ const OurPartners = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

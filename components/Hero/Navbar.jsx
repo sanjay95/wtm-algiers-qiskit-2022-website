@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import WTMAlgiers from "../../images/logos/WTMAlgiers-white.png";
+import Affinidilogo from "../../images/logos/affinidi-logo.svg";
 import NavLinks from "./links";
 import Bluebutton from "../shared/Bluebutton";
 const Navbar = () => {
@@ -12,7 +12,7 @@ const Navbar = () => {
       <div>
         <div className="flex justify-between items-center">
           <div>
-            <Image src={WTMAlgiers} alt="WTM Algiers" />
+            <Image src={Affinidilogo} alt="Affinidi" />
           </div>
 
           <ul className="hidden lg:flex items-center text-xl gap-16 font-medium text-qiskit-white 2xl:text-4xl 2xl:gap-24">
@@ -31,7 +31,14 @@ const Navbar = () => {
           </ul>
 
           <div className="hidden lg:flex">
-            <Bluebutton title={"Join us"} />
+            {/* <Bluebutton title={"Join us"} /> */}
+            <div className="bg-[url('/hero/blue_button.svg')] bg-no-repeat bg-center bg-cover z-10">
+              <div className="h-1/6 mx-[25px] pb-2 flex justify-center">
+                <div className="sm:h-[100px] h-[70px] sm:text-3xl sm:font-medium text-l pt-[20px] sm:pt-[30px]">
+                  <Link href="/#register" >Join us</Link>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div

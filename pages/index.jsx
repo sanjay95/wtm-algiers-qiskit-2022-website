@@ -1,6 +1,7 @@
 import Head from "next/head";
 import OurSpeakers from "../components/OurSpeakers/Index";
 import AboutUs from "../components/AboutUs/Index";
+import Register from "../components/Register/Index";
 import TheyTrustedUs from "../components/TheyTrustedUs/Index";
 import OurPartners from "../components/OurPartners/Index";
 import Agenda from "../components/Agenda/Index";
@@ -11,13 +12,14 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>WTM Algiers Qiskit2022</title>
-        <link rel="shortcut icon" href="/qiskit.png" />
+        <title>Even Website</title>
+        <link rel="shortcut icon" href="/affinidi.ico" />
       </Head>
 
       <Hero />
       <main className="font-IBM-Plex">
         <AboutEvent />
+        <Register/>
         <AboutUs />
         <OurPartners />
         <OurSpeakers/>

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Navbar from "./Navbar";
-import Qiskit from "../../images/logos/QiskitHero.png";
 import Arrow from "../../images/shapes/Arrow.png";
+import Qiskit from "../../images/logos/wordcloud2.png"
 import GDGAlgiers from "../../images/logos/GDGAlgiers-white.png";
 import CounterContainer from "./CounterContainer";
 import Maqam from "../../images/shapes/MaqamWhite.png";
@@ -11,6 +11,18 @@ import Computer from "../../images/shapes/computerWhite.png";
 import Purpulebutton from "../shared/Purpulebutton";
 import Tilt from "react-parallax-tilt";
 import Typewriter from "typewriter-effect";
+import  WordCloud from "../WordCloud/Index";
+
+const data = [
+  { value: 'JavaScript', count: 38 },
+  { value: 'React', count: 30 },
+  { value: 'Nodejs', count: 28 },
+  { value: 'Express.js', count: 25 },
+  { value: 'HTML5', count: 33 },
+  { value: 'MongoDB', count: 18 },
+  { value: 'CSS3', count: 20 },
+]
+
 const Hero = () => {
   return (
     <section id="home" className="min-h-screen hero-bg">
@@ -24,21 +36,21 @@ const Hero = () => {
             <Image src={Globe} />
           </div>
           <div className="hidden lg:block w-16 h-16 absolute top-4 right-16">
-            <Image src={Maqam} />
+            <Image src={Computer} />
           </div>
           <div className="flex flex-col lg:flex-row items-center">
             <div className="flex flex-col gap-7 flex-1 lg:pl-12 text-qiskit-white">
               <h1 className="font-bold text-center lg:text-left text-4xl lg:text-6xl 2xl:text-7xl leading-[4.5rem]">
                 <Typewriter
                   options={{
-                    strings: ["Qiskit | Fall Fest Algiers"],
+                    strings: ["Holistic Identity + Vault"],
                     autoStart: true,
                     loop: true,
                   }}
                 />
               </h1>
               <p className="font-medium text-center lg:text-left leading-[2rem] lg:text-2xl 2xl:text-4xl 2xl:leading-[2.875rem]">
-                Your chance to discover the Quantum Computing world!
+                Your chance to build the Holistic Identity and providing power to your users!
               </p>
               <div className="flex items-end">
                 <div className="relative h-[67px] bounce w-[67px] 2xl:w-[101px] 2xl:h-[114px]">
@@ -52,16 +64,17 @@ const Hero = () => {
 
             <div className="flex-1 pt-20 lg:pt-0 order-first lg:order-last">
               <Tilt>
+               {/* <WordCloud></WordCloud> */}
                 <Image src={Qiskit} />
               </Tilt>
             </div>
           </div>
 
           <div className="flex items-center">
-            <div className="hidden lg:flex">
+            {/* <div className="hidden lg:flex">
               <Image src={GDGAlgiers} />
-            </div>
-            <CounterContainer countDownLimit={1666425600000} />
+            </div> */}
+            <CounterContainer countDownLimit={1700020465000} />
           </div>
 
           <div className="w-12 h-12 absolute bottom-16 left-8">

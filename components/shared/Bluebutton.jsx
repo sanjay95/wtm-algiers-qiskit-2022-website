@@ -1,8 +1,19 @@
+import React from 'react';
+import { useNavigate } from "react-router-dom";
+
+
 const Bluebutton = ({ title }) => {
+
+  // let navigate = useNavigate();
+  // const redirect = () => {
+  //   let path = `#about-us`;
+  //   navigate(path);
+  // }
   return (
     <button
-      disabled={true}
-      className="z-20 mb-[-20px] cursor-not-allowed"
+      disabled={false}
+      // onClick={}
+    //className="z-20 mb-[-20px] cursor-not-allowed"
     >
       <div className="bg-[url('/hero/blue_button.svg')] bg-no-repeat bg-center bg-cover z-10">
         <div className="h-1/6 mx-[25px] pb-2 flex justify-center">

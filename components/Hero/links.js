@@ -7,10 +7,7 @@ const navLinks = [
     content: "About",
     redirect: "#about-us",
   },
-  {
-    content: "Partners",
-    redirect: "#our-partners",
-  },
+ 
   {
     content: "Speakers",
     redirect: "#speakers",
@@ -18,6 +15,10 @@ const navLinks = [
   {
     content: "Agenda",
     redirect: "#agenda",
+  },
+  {
+    content: "Blogs",
+    redirect: "#our-partners",
   },
 ];
 
